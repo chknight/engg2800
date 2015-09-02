@@ -4,16 +4,17 @@
   <title>midi</title>
   <link rel="stylesheet" type="text/css" href="midi.css">
   <link rel="stylesheet" type="text/css" href="mdl/material.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <!--link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"-->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
   <script type="text/javascript" src="mdl/material.min.js"></script>
   <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src="midi.js"></script>
-  <link rel="stylesheet" href="piano-keyboard-master/Piano-Keyboard.css">
-  <script src="piano-keyboard-master/Piano-Keyboard.js" defer></script>
+  <link rel="stylesheet" href="piano-keyboard/Piano-Keyboard.css">
+  <script src="piano-keyboard/Piano-Keyboard.js" defer></script>
 </head>
 <body>
     <!-- Always shows a header, even in smaller screens. -->
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header midi">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
         <!-- Title -->
@@ -26,6 +27,43 @@
     <main class="mdl-layout__content">
       <div class="page-content">
 
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--4-col">
+            
+          </div>
+          <div class="mdl-cell mdl-cell--3-col">
+            <div class="board">
+              <img src="board.jpg" class="board-background">
+              <div class="opt left-opt">-5</div>
+              <div class="tune" id="tune">90</div>
+              <div class="BPM">BPM</div>
+              <div class="opt right-opt">+5</div>
+              <div class="choices">
+                <div class="choice">40</div>
+                <div class="choice">50</div>
+                <div class="choice">60</div>
+                <div class="choice">70</div>
+                <div class="choice">80</div>
+                <div class="choice">90</div>
+                <div class="choice">100</div>
+                <div class="choice">110</div>
+                <div class="choice">120</div>
+                <div class="choice">130</div>
+                <div class="choice">140</div>
+                <div class="choice">150</div>
+                <div class="choice">160</div>
+                <div class="choice">170</div>
+                <div class="choice">180</div>
+                <div class="choice">190</div>
+                <div class="choice">200</div>
+                <div class="choice">210</div>
+                <div class="choice">220</div>
+                <div class="choice">230</div>
+                </div>   
+            </div>
+          </div>
+        </div>
+        
         <div class="mdl-grid">
           <div class="mdl-cell mdl-cell--3-col"></div>
           <div class="mdl-cell mdl-cell--1-col">
@@ -57,51 +95,52 @@
         </div>
 
 
-        <div class="mdl-grid">
+        <div class="mdl-grid my-toggles">
           <div class="mdl-cell mdl-cell--3-col"></div>
           <div class="mdl-cell mdl-cell--1-col">
             <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="None">
-              <input type="checkbox" id="None" class="mdl-switch__input" checked />
+              <input type="checkbox" id="None" class="mdl-switch__input process-block" checked disabled/>
               <span class="mdl-switch__label">None</span>
             </label>          
           </div>
 
           <div class="mdl-cell mdl-cell--1-col">
             <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="Pitch Shift Block">
-            <input type="checkbox" id="Pitch Shift Block" class="mdl-switch__input" />
+            <input type="checkbox" id="Pitch Shift Block" class="mdl-switch__input process-block" />
             <span class="mdl-switch__label">Pitch Shift Block</span>
             </label>
           </div>
 
           <div class="mdl-cell mdl-cell--1-col">
             <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="Arpeggiator">
-            <input type="checkbox" id="Arpeggiator" class="mdl-switch__input" />
+            <input type="checkbox" id="Arpeggiator" class="mdl-switch__input process-block" />
             <span class="mdl-switch__label">Arpeggiator</span>
             </label>
           </div>
 
           <div class="mdl-cell mdl-cell--1-col">
             <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="Monophonic">
-            <input type="checkbox" id="Monophonic" class="mdl-switch__input" />
+            <input type="checkbox" id="Monophonic" class="mdl-switch__input process-block" />
             <span class="mdl-switch__label">Monophonic</span>
             </label>
           </div>
 
           <div class="mdl-cell mdl-cell--1-col">
             <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="Chordify">
-            <input type="checkbox" id="Chordify" class="mdl-switch__input" />
+            <input type="checkbox" id="Chordify" class="mdl-switch__input process-block" />
             <span class="mdl-switch__label">Chordify</span>
             </label>
           </div>
 
           <div class="mdl-cell mdl-cell--1-col">
             <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="Gate">
-            <input type="checkbox" id="Gate" class="mdl-switch__input" />
+            <input type="checkbox" id="Gate" class="mdl-switch__input process-block" />
             <span class="mdl-switch__label">Gate</span>
             </label>
           </div>
         </div>
 
+        <openmusic-piano-keyboard id="full" octaves="2" class="piano"></openmusic-piano-keyboard> 
 
       </div>
     </main>
