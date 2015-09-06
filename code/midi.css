@@ -1,0 +1,51 @@
+.bottom-layer {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+#background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.my-nav {
+  background-color: #0099CC;
+}
+
+.my-btn {
+  width: 65px;
+  height: 34px;
+}
+
+.my-buttons {
+  margin-top: 30px;
+}
+
+.my-toggles {
+  margin-top: 30px;
+  font-size: 12px;
+  color: white;
+}
+
+.keyboard {
+  top: 50px;
+  left: 25%;
+}
+.board {
+  margin-top: 30px;
+  background-color: black;
+}
+.opt {
+  color: white;
+  text-indent: center;
+  font-size: 30px;
+}
+.tune {
+  color: white;
+  font-size: 80px;
+  text-align : center;
+}
+

@@ -1,0 +1,147 @@
+body {
+  font-family: 'Roboto' !important;
+}
+
+div {
+  font-family: 'Roboto' !important;
+}
+
+.bottom-layer {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#background {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.my-nav {
+  background-color: #0099CC;
+}
+
+.my-btn {
+  width: 65px;
+  height: 34px;
+}
+
+.my-buttons {
+  margin-top: 30px;
+}
+
+.my-toggles {
+  margin-top: 30px;
+  font-size: 12px;
+  color: white;
+}
+
+.keyboard {
+  top: 50px;
+  left: 15%;
+}
+.board {
+  position: relative;
+  margin-top: 30px;
+  height: 300px;
+  width: 500px;
+}
+.opt {
+  position: absolute;
+  top: 150px;
+  color: white;
+  font-size: 30px;
+  text-align: left;
+}
+.opt:hover {
+  color: #99CCFF;
+  font-size:50px;
+}
+
+.opt:active{
+  color: white;
+  font-size: 30px;
+}
+.left-opt {
+  left: 10px;
+}
+.right-opt {
+  right: 10px;
+}
+.tune {
+  position: absolute;
+  color: white;
+  top: 120px;
+  left: 110px;
+  font-size: 80px;
+  text-align : center;
+}
+
+.BPM {
+  font-size: 60px;
+  position: absolute;
+  right: 100px;
+  top: 120px;
+  color: white;
+}
+
+
+.midi {
+  background: url('background3.jpg') center / cover;
+}
+
+.board-background {
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  box-shadow: 0px 6px 5px #888888;
+}
+
+.choices {
+  position: absolute;
+  bottom: 3px;
+  color: white;
+  width: 485px;
+  left: 10px;
+}
+
+.choice {
+  font-size: 20px;
+  display: inline-block;
+  width: 45px;
+  height: 35px;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+
+.choice:hover {
+  font-size: 25px;
+  color: #99CCFF;
+}
+
+.choice:active {
+  color: white;
+  font-size: 20px;
+}
+
+.keydown {
+  background: #fff;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.4);
+}
+
+.keyhover {
+  background: #fff;
+  box-shadow: 0px 0px 15px rgba(255, 255, 0, 0.9);
+  z-index: 1;
+  color: black;
+}
+
+.blackdown {
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.9)!important;
+  background: #000  !important;
+  color: yellow !important;
+}

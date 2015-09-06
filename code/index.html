@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>midi</title>
+  <link rel="stylesheet "type="text/css" href="bootstrap/css/bootstrap.css">
+  <link type="text/javascript" href="bootstrap/js/bootstrap.js">
+  <link rel="stylesheet" type="text/css" href="midi.css">
+  <link rel="stylesheet" type="text/css" href="toggle/css/bootstrap-toggle.css">
+  <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src="toggle/js/bootstrap-toggle.js"></script>
+  <script type="text/javascript" src="midi.js"></script>
+  <link rel="stylesheet" href="piano-keyboard-master/Piano-Keyboard.css">
+  <script src="piano-keyboard-master/Piano-Keyboard.js" defer></script>
+</head>
+<body>
+  <img src="background.jpg" id="background">
+  <nav class="navbar navbar-default my-nav">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container-fluid mone">
+    <div class="row">
+      <div class="col-md-5"></div>
+      <div class="col-md-2 board">
+        <div row>
+          <div class="col-md-2">
+            <p class="opt">+5</p>
+          </div>
+          <div class="col-md-8">
+            <p class="tune">90</p>
+          </div>
+          <div>
+            <p class="opt">-5</p>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+
+  <div class="container-fluid my-buttons">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+          <div class="col-md-2">
+            <button class="btn btn-primary my-btn">file</button>
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-primary my-btn">up</button>
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-primary my-btn">down</button>
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-primary my-btn">tempo</button>
+          </div>
+          <div class="col-md-2">
+            <button class="btn btn-primary my-btn">tempo</button>
+          </div>
+          <div class="col-md-2"></div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+
+  <div class="container-fluid my-toggles">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-11">
+        <div class="row">
+          <div class="col-md-2">
+          <label class="checkbox-inline">
+            <input type="checkbox" checked data-toggle="toggle"> None
+          </label>            
+          </div>
+          <div class="col-md-2">
+          <label class="checkbox-inline">
+            <input type="checkbox" data-toggle="toggle"> Pitch Shift Block
+          </label>
+          </div>
+          <div class="col-md-2">
+          <label class="checkbox-inline">
+            <input type="checkbox" data-toggle="toggle"> Arpeggiator
+          </label>            
+          </div>
+          <div class="col-md-2">
+          <label class="checkbox-inline">
+            <input type="checkbox" data-toggle="toggle"> Monophonic
+          </label>            
+          </div>
+          <div class="col-md-2">            
+          <label class="checkbox-inline">
+            <input type="checkbox" data-toggle="toggle"> Chordify
+          </label>            
+          </div>
+          <div class="col-md-2">  
+          <label class="checkbox-inline">
+            <input type="checkbox" data-toggle="toggle"> Gate
+          </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid keyboard" id="keyboard">
+    <div class="row">
+      <div class="col-mid-4"></div>
+      <div class="col-mid-3">
+        <div class="row" id="piano-keyboard">
+        <openmusic-piano-keyboard id="full" octaves="1" ></openmusic-piano-keyboard>
+      </div>
+      </div>
+      <div class="col-mid-5"></div>
+    </div>
+  </div>
+</body>
+</html>
